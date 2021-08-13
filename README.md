@@ -1,14 +1,17 @@
-# Project
+# Intro to Testing with the IntegerArrayList Class
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+Welcome to the Visual Studio Code Java class `IntegerArrayList`. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-As the maintainer of this project, please make a few updates:
+## Folder Structure
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+## Dependency Management
+
+The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
 
 ## Contributing
 

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Refactoring Add",
+  "steps": [
+    {
+      "file": "src/IntegerArrayList.java",
+      "description": "We now only want to increase the length of data whenever `size` is equal to the length of `data` when we try to add a new value.\n\nAdd the necessary if statement.",
+      "pattern": "^[^\\S\\n]*increaseLengthData\\(\\);"
+    },
+    {
+      "file": "src/IntegerArrayList.java",
+      "description": "Instead of increasing data by 1, let's double it so that we don't run into the same issue we were trying to prevent after the first resize.\n\nMake the change so that the length of data will be doubled instead of increased by 1.",
+      "pattern": "^[^\\S\\n]*this\\.data = new int\\[this\\.data\\.length \\+ 1\\];"
+    },
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "Now that we have made our implementation of add more efficient, let's test that the IntegerArrayList still works as expected.\n\nRun all the tests and return to MSLearn after fixing any issues.",
+      "line": 7
+    }
+  ],
+  "ref": "exercise-3-testing-get"
+}

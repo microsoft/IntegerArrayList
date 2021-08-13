@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "The IntegerArrayList Class",
+  "steps": [
+    {
+      "file": "src/IntegerArrayList.java",
+      "description": "This class implements a list data structure to which the user can append integers.\nWe will use a standard Java array to implement this class.\n\nRead the comments above all methods so you understand the intended behavior of each method.",
+      "pattern": "^[^\\S\\n]*public class IntegerArrayList \\{"
+    },
+    {
+      "file": "src/IntegerArrayList.java",
+      "description": "Currently the IntegerArrayList class only contains a `size` variable and the `size()` method is the only method that is already implemented.  \nLater we will add a `data` variable that stores the list elements, but we want to first make sure that `size()` works as expected before moving on to the next step.",
+      "pattern": "^[^\\S\\n]*return this\\.size;"
+    },
+    {
+      "file": "src/IntegerArrayList.java",
+      "description": "Methods `get` and `add` are not yet implemented. We want to first test that `size` works as expected.\n\nReturn to MSLearn to complete the quiz.",
+      "pattern": "^[^\\S\\n]*public void add\\(int value\\) \\{"
+    }
+  ],
+  "ref": "exercise-1-testing-size"
+}

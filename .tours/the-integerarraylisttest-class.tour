@@ -1,0 +1,47 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "The IntegerArrayListTest Class",
+  "steps": [
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "In this class we'll implement all unit tests for the IntegerArrayList class",
+      "pattern": "^[^\\S\\n]*public class IntegerArrayListTest \\{"
+    },
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "We import many things from the JUnit testing framework. Let's first make sure we understand what they do.\n\n`import static org.junit.jupiter.api.Assertions.assertEquals;`  \nAssertions let you express expecatations about variables. Your test will fail when the variable does not meet the expectation.  \nRefer to this page for more information about JUnit assertions:  \nhttps://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html\n\n`import org.junit.jupiter.api.Test;`  \n`@Test` is an annotation placed above several methods in the `IntegerArrayListTest` class below. JUnit automatically finds the annotated methods and treats them as test cases.\n\n`import org.junit.jupiter.api.BeforeEach;`  \n`@BeforeEach` is an annotation placed above the `setup` method in the `IntegerArrayListTest` class below. This means that the setup method will be executed before each test case. ",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 35
+        }
+      }
+    },
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "The `setup` method will be executed before each test case in `IntegerArrayListTest` because it is annotated with `@BeforeEach`.  \nThis means that for each test case the `list` variable will be reset to a new empty `IntegerArrayList`.  \n`@BeforeEach` allows us to reuse initialization code accross different test cases.",
+      "line": 11
+    },
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "All test methods inside `IntegerArrayListTest` are annotated with `@Test` so that JUnit can find them.\n\nTry clicking \"Run Test\" above this method. It should pass (you should see  a small checkmark appear next to \"Debug Test\").\n\nNext, try to make it fail by placing `assertEquals(1, 2)` into the body of the method.",
+      "line": 16
+    },
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "Now that you know what a passing test and a failing test look like, implement the actual test cases for `testSizeEmptyList`.\n\nNote that we are testing whether or not `IntegerArrayList` correctly implements the behavior of the interface as defined in `IntegerList`. So we want to make assertions about `size()` and not about the `size` variable. \n\nNote that we may or may not have introduced bugs in our implementation. If you encouter a bug, be sure to fix te bug to make your test pass.",
+      "line": 17
+    },
+    {
+      "file": "src/IntegerArrayListTest.java",
+      "description": "This is certainly a case we would also want to test. However, we have not yet implemented the `add` method, so our test will definitely lead to a `NotImplementedException`.\n\nIf you want, you can still try to implement the test case first, but it is also fine to leave this empty for now.\nWriting a test case before all required methods are implemented is a practice called [\"Test-driven Development\"](https://en.wikipedia.org/wiki/Test-driven_development).\n\nReturn to MSLearn to complete the quiz.",
+      "pattern": "^[^\\S\\n]*public void testSizeNonEmptyList\\(\\) \\{"
+    }
+  ],
+  "ref": "exercise-1-testing-size"
+}
