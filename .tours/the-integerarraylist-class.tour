@@ -3,8 +3,12 @@
   "title": "The IntegerArrayList Class",
   "steps": [
     {
+      "title": "Intro",
+      "description": "Welcome to the first CodeTour paired with the Microsoft Learn module [Implementing unit tests in a simple Java program](https://docs.microsoft.com/learn). If you're looking to learn more about unit tests, we highly recommend going through the Learn module as you explore this code for a more extensive explanation of each step if you haven't already.\r\n\r\nClick \"Next\" to begin exploring the IntegerArrayList class as described in [Unit 2](https://docs.microsoft.com/learn) of the associated Learn module."
+    },
+    {
       "file": "src/IntegerArrayList.java",
-      "description": "This class implements a list data structure to which the user can append integers.\nWe will use a standard Java array to implement this class.\n\nRead the comments above all methods so you understand the intended behavior of each method.",
+      "description": "This class implements a list data structure to which the user can append integers.\nWe will use a standard Java array to implement this class.\n\nRead the comments above all methods in this *IntegerArrayList.java* file so you understand the intended behavior of each method. You should also browse through the Javadocs for the List type, linked in the comments for this class.",
       "pattern": "^[^\\S\\n]*public class IntegerArrayList \\{"
     },
     {
@@ -14,8 +18,12 @@
     },
     {
       "file": "src/IntegerArrayList.java",
-      "description": "Methods `get` and `add` are not yet implemented. We want to first test that `size` works as expected.\n\nReturn to MSLearn to complete the quiz.",
+      "description": "Methods `get` and `add` are not yet implemented. We want to first test that `size` works as expected.\n\nYou can see that in the `get` and `add` methods we've thrown the `NotImplementedException()` so that if these methods get called the user gets an error.",
       "pattern": "^[^\\S\\n]*public void add\\(int value\\) \\{"
+    },
+    {
+      "title": "KnowledgeCheck",
+      "description": "Congratulations! You have just completed your first CodeTour! \r\n\r\nHead back to [Unit 2 of the Implementing unit tests in simple Java program](https://docs.microsoft.com/learn) Microsoft Learn module to complete the knowledge check, earn credit for completing this portion, and continue through the module to the next step!"
     }
   ],
   "ref": "exercise-1-testing-size"

@@ -1,3 +1,5 @@
+import org.apache.commons.lang3.NotImplementedException;
+
 /**
  * An ordered collection (a.k.a. sequence) of integers that allows the user to append new elements and access elements by their index.
  * Based on the Java Util List API: https://docs.oracle.com/javase/8/docs/api/java/util/List.html
@@ -6,11 +8,9 @@
 public class IntegerArrayList {
     
     private int size;
-    private int[] data;
 
     public IntegerArrayList() {
         this.size = 0;
-        this.data = new int[10];
     }
 
     /**
@@ -28,18 +28,7 @@ public class IntegerArrayList {
      * @throws IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
      */
     public int get(int index) {
-        if (index >= size()) {
-            throw new IndexOutOfBoundsException();
-        }
-        return this.data[index];
-    }
-
-    private void increaseLengthData() {
-        int[] temp = this.data;
-        this.data = new int[this.data.length*2];
-        for (int i = 0; i < temp.length; i++) {
-            this.data[i] = temp[i];
-        }
+        throw new NotImplementedException();
     }
 
     /**
@@ -47,10 +36,6 @@ public class IntegerArrayList {
      * @param value - element to be appended to this list
      */
     public void add(int value) {
-        if (this.size == this.data.length) {
-            increaseLengthData();
-        }
-        this.data[this.size] = value;
-        this.size += 1;
+        throw new NotImplementedException();
     }
 }
