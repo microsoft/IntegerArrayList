@@ -8,9 +8,11 @@ import org.apache.commons.lang3.NotImplementedException;
 public class IntegerArrayList {
     
     private int size;
+    private int[] data;
 
     public IntegerArrayList() {
         this.size = 0;
+        this.data = new int[10];
     }
 
     /**
@@ -36,6 +38,7 @@ public class IntegerArrayList {
      * @param value - element to be appended to this list
      */
     public void add(int value) {
-        throw new NotImplementedException();
+        this.data[0] = value;
+        this.size += 1;
     }
 }

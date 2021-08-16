@@ -20,4 +20,19 @@ public class IntegerArrayListTest {
     public void testSizeNonEmptyList() {
         // TODO
     }
+
+    @Test
+    public void testAddingOneValueIncreasesSize() {
+        // TODO
+    }
+
+    @Test
+    public void testAddingMultipleValuesIncreasesSize() {
+        // TODO
+    }
+
+    @Test
+    public void testAddingNegativeValuesIncreasesSize() {
+        // TODO
+    }
 }
