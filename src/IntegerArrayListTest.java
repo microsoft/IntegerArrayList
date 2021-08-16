@@ -13,7 +13,7 @@ public class IntegerArrayListTest {
 
     @Test
     public void testSizeEmptyList() {
-        // TODO
+        assertEquals(list.size(), 0);
     }
 
     @Test
