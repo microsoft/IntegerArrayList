@@ -1,0 +1,42 @@
+{
+    "$schema": "https://aka.ms/codetour-schema",
+    "title": "The Add Method",
+    "steps": [
+      {
+        "file": "src/IntegerArrayList.java",
+        "description": "In order to be able to add values to the IntegerArrayList, we need a variable that can store the data.\nWe'll use a standard Java array to store the integer data.",
+        "line": 13
+      },
+      {
+        "file": "src/IntegerArrayList.java",
+        "description": "We initialize `data` to an array of length 10.",
+        "line": 17
+      },
+      {
+        "file": "src/IntegerArrayList.java",
+        "description": "In `add` we store the new value and increase the `size` of our IntegerArrayList by one.\nNow let's move on to the testing part.",
+        "pattern": "^[^\\S\\n]*public void add\\(int value\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Let's start with testing that adding one value to the list increases its size to 1. Assert that the size of the list increased as expected.\n\nNote that we may or may not have introduced bugs in our implementation.",
+        "pattern": "^[^\\S\\n]*public void testAddingOneValueIncreasesSize\\(\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Now that we've verified that add works as expected for one value, let's try adding more than one value.\nAssert that the size of the list increased as expected.",
+        "pattern": "^[^\\S\\n]*public void testAddingMultipleValuesIncreasesSize\\(\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Now that we verified that the size increases as expected when adding positive values, let's do an extra check to make sure that it also works when adding negative values.",
+        "pattern": "^[^\\S\\n]*public void testAddingNegativeValuesIncreasesSize\\(\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "After implementing the test methods below, it turns out that this method is redundant. Feel free to remove it or to leave it empty.\n\nNote that we have not yet tested that the values appear in the correct order in the list. For that we'll need the `get` method to be implemented.\n\nGo back to MSLearn to take the next quiz.",
+        "pattern": "^[^\\S\\n]*public void testSizeNonEmptyList\\(\\) \\{"
+      }
+    ],
+    "ref": "exercise-2-testing-add"
+  }

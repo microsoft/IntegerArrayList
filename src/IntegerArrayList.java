@@ -30,7 +30,7 @@ public class IntegerArrayList {
      * @throws IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
      */
     public int get(int index) {
-        throw new NotImplementedException();
+        return this.data[index+1];
     }
 
     /**

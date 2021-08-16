@@ -35,4 +35,54 @@ public class IntegerArrayListTest {
     public void testAddingNegativeValuesIncreasesSize() {
         // TODO
     }
+
+    @Test
+    public void testFirstValueIsStoredAtIndexZero() {
+        // TODO
+    }
+
+    @Test
+    public void testMultipleValuesAreStoredInOrderOfAdding() {
+        // TODO
+    }
+
+    @Test
+    public void testNegativeValuesAreStoredInOrderOfAdding() {
+        // TODO
+    }
+
+    @Test
+    public void testIndexEqualToSizeGivesIndexOutOfBoundsException() {
+        // TODO
+    }
+
+    @Test
+    public void testIndexLargerThanSizeGivesIndexOutOfBoundsException() {
+        // TODO
+    }
+
+    @Test
+    public void testAddingElevenValuesIncreasesSizeToEleven() {
+        // TODO
+    }
+
+    @Test
+    public void testAddingFifteenValuesIncreasesSizeToFifteen() {
+        // TODO
+    }
+
+    @Test
+    public void testCanAccessTheEleventhValueInAList() {
+        // TODO
+    }
+
+    @Test
+    public void testCanAccessTheFifteenthValueInAList() {
+        // TODO
+    }
+
+    @Test
+    public void testIndexLargerThanSizeGivesIndexOutOfBoundsExceptionForListOfSizeFifteen() {
+        // TODO
+    }
 }

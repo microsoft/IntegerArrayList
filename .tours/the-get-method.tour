@@ -1,0 +1,32 @@
+{
+    "$schema": "https://aka.ms/codetour-schema",
+    "title": "The Get Method",
+    "steps": [
+      {
+        "file": "src/IntegerArrayList.java",
+        "description": "As you can see the get method is now implemented. Let's move on to the testing part.",
+        "pattern": "^[^\\S\\n]*public int get\\(int index\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Let's start with testing that the first value that we add to the list will be stored in index 0.\n\nNote that we may or may not have introduced bugs in our implementation.\n\nYou find there is a bug, be sure to fix it so that your test will pass.",
+        "pattern": "^[^\\S\\n]*public void testFirstValueIsStoredAtIndexZero\\(\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Next, let's store multiple different values e.g. 1, 2 and 3 and make sure they appear in the correct order in the list.\n\nFix any bugs you encounter.",
+        "pattern": "^[^\\S\\n]*public void testMultipleValuesAreStoredInOrderOfAdding\\(\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Let's also test that negative numbers are stored in order of adding.\n\nReturn to MSLearn to complete the quiz.",
+        "pattern": "^[^\\S\\n]*public void testNegativeValuesAreStoredInOrderOfAdding\\(\\) \\{"
+      },
+      {
+        "file": "src/IntegerArrayListTest.java",
+        "description": "Try to implement this test. You will probably find that it does not pass.\n\nGo back to MSLearn after implementing this test and confirming that it fails as soon as the list is longer than 10 elements.",
+        "pattern": "^[^\\S\\n]*public void testAddingElevenValuesIncreasesSizeToEleven\\(\\) \\{"
+      }
+    ],
+    "ref": "exercise-3-testing-get"
+  }
